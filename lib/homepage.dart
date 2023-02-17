@@ -70,15 +70,19 @@ class _homepageState extends State<homepage> {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
+        appBar: AppBar(
+          title: Text("Fashion gallery"),
+          centerTitle: true,
+        ),
         body: Stack(
           children: [
             Container(
               decoration: BoxDecoration(
                 gradient:
                 LinearGradient(transform: GradientRotation(1), colors: [
-                  Colors.blue,
-                  Colors.blue.shade900,
-                  Colors.deepPurple.shade700,
+                  Colors.amber,
+                  Colors.amber.shade900,
+                  Colors.deepOrange.shade700,
                 ],),),
             ),
             GridView.builder(
